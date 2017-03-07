@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/picture">
+        <file>ui_picture/eye.png</file>
+        <file>ui_picture/file.png</file>
+        <file>ui_picture/folder.png</file>
+        <file>ui_picture/lock.png</file>
+        <file>ui_picture/ygg.png</file>
+        <file>ui_picture/file/scene.png</file>
+        <file>ui_picture/file/UI.png</file>
+        <file>ui_picture/objects/button.png</file>
+        <file>ui_picture/objects/circle.png</file>
+        <file>ui_picture/objects/decal.png</file>
+        <file>ui_picture/objects/empty.png</file>
+        <file>ui_picture/objects/map.png</file>
+        <file>ui_picture/objects/particle.png</file>
+        <file>ui_picture/objects/picture.png</file>
+        <file>ui_picture/objects/polygon.png</file>
+        <file>ui_picture/objects/sprite.png</file>
+        <file>ui_picture/objects/text.png</file>
+        <file>ui_picture/toolBar/newFile.png</file>
+        <file>ui_picture/toolBar/preview.png</file>
+        <file>ui_picture/toolBar/setting.png</file>
+        <file>ui_picture/toolBar/arrow.png</file>
+        <file>ui_picture/toolBar/hand.png</file>
+        <file>ui_picture/objects/rect.png</file>
+        <file>ui_picture/objects/sprite_big.png</file>
+        <file>ui_picture/com/scroll_down.png</file>
+        <file>ui_picture/com/scroll_right.png</file>
+        <file>ui_picture/logo.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>ui_qss/styleMenuBar.qss</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

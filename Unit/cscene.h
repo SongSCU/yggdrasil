@@ -1,0 +1,51 @@
+/**************************************************************************
+File:         cscene.h
+Author:       Song Xiaofeng
+Date:         2016-05-17
+Description:
+**************************************************************************/
+#pragma once
+#include <QGraphicsScene>
+#include <QWidget>
+#include <QGraphicsItem>
+#include <QList>
+#include "Controller/cunit_controller.h"
+//////////////////////////////////////////////////////////////////
+///    Class:  CScene
+///    Brief:  
+//////////////////////////////////////////////////////////////////
+class CScene : public QGraphicsScene {
+	Q_OBJECT
+	///////////////////////////////////////////////////////////////////
+	//all public functions are here
+	///////////////////////////////////////////////////////////////////
+public:
+	CScene(QWidget* parent = 0);
+	///////////////////////////////////////////////////////////////////
+	//all signals are here
+	///////////////////////////////////////////////////////////////////
+signals:
+	void signal_update_component(QList<QGraphicsItem*> itemList);
+	void signal_update_selected_item(const QList<int> &list);
+	///////////////////////////////////////////////////////////////////
+	//all private functions are here
+	///////////////////////////////////////////////////////////////////
+private:
+	void mBuildConnects();
+	//void wheelEvent(QWheelEvent* event);
+	void mousePressEvent(QMouseEvent * event);
+	//void mouseReleaseEvent(QMouseEvent * event);
+	//void dragEnterEvent(QDragEnterEvent *event);
+	//void dropEvent(QDropEvent *event);
+	//void dragMoveEvent(QDragMoveEvent *event);
+	///////////////////////////////////////////////////////////////////
+	//all private slots are here
+	///////////////////////////////////////////////////////////////////
+private slots:
+	void slot_selected_item_changed();
+	///////////////////////////////////////////////////////////////////
+	//all properties are here
+	///////////////////////////////////////////////////////////////////
+private:
+	CUnitController * m_unitController;
+};
